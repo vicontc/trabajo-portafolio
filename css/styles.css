@@ -1,0 +1,164 @@
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&display=swap" rel="stylesheet">);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Spartan
+}
+h1{
+    font-display: spartan;
+    font-size: 52px;
+}
+h2{
+    font-size: 32px;
+    color: rgba(0, 0, 0, 0.455);
+}
+
+ /*empieza la cabecera */
+ #header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px, 80px;
+    background-color: rgb(72, 1, 91); 
+    box-shadow:0 5px 15px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+ }
+
+ #navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ #navbar li {
+    list-style: none;
+    padding: 0 20px;
+ }
+
+ #navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: aqua;
+    border: 2px;
+    transition: 0.3s ease-in-out;
+
+ }
+ #navbar li a:hover,
+ #navbar li a.active:hover{
+    color: black;
+ }
+ #navbar li a.active::after{
+    width: 30%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+
+ .logo{
+    height: 100px;
+    width: 100px;
+    position:static;
+ }
+ /*empieza el frontis */
+ #hero{
+    background-image: url(../imagenes/hero-1.png);
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+ }
+ #hero h2 {
+    color: rgb(24, 7, 39);
+    border: 50px;
+    padding-bottom: 15px;
+    border-color: black;
+ }
+ #hero h1{
+
+    padding-bottom: 15px;
+ }
+ .myButton {
+	box-shadow:inset 0px 1px 3px 0px #91b8b3;
+	background:linear-gradient(to bottom, #f557dd 5%, #7a0174 100%);
+	background-color:#ff32d3;
+	border-radius:5px;
+	border:1px solid #b82ebd;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #f69aeb;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+	background-color:#6c7c7c;
+}
+.myButton:active {
+	position:relative;
+	top:1px;}
+
+    #productos {
+        text-align: center;
+    }
+    #productos .product{
+        width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid plum;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px #6c7c7c;
+        margin: 15px 0;
+    }
+    #productos .product:hover{
+        box-shadow: 20px 20px 30px;
+    }
+    #productos .product img{
+        width: 70%;
+        border-radius: 25px;
+    }
+    #productos .product .des{
+        text-align: start;
+        padding: 10px 0;
+    }
+    #productos .product .des span{
+        color: #7a0174;
+        font-size: 15px;
+        
+    }
+    #productos {
+        display: flex;
+       justify-content: space-between;
+       padding-top: 30px;
+       flex-wrap: wrap;
+    }
+ /*empieza footer */
+ footer{
+    background-color: #909090;
+ }
+
+ footer .section-p1 h5{
+    font size: 30px;
+    
+ }
+ footer p{
+    font-size: 13px;
+ }
